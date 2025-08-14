@@ -1,5 +1,23 @@
-import Image from "next/image";
+import { Header } from "@/components/header";
+import { HeroSection } from "@/components/hero-section";
+import { FeaturesSection } from "@/components/features-section";
+import { CommunitySection } from "@/components/community-section";
+import { OpenSourceSection } from "@/components/open-source-section";
+import { PricingSection } from "@/components/pricing-section";
+import { Footer } from "@/components/footer";
 
-export default function Home() {
-  return <Image className="dark:invert" src="/logo.png" alt="AI Interview Buddy Logo" width={180} height={38} priority />;
+export default function HomePage() {
+  return (
+    <div className="min-h-screen bg-soft-white">
+      <Header />
+      <main>
+        <HeroSection />
+        <FeaturesSection />
+        <CommunitySection />
+        <OpenSourceSection />
+        <PricingSection />
+      </main>
+      <Footer />
+    </div>
+  );
 }
