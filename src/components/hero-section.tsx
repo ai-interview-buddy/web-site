@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
+import { linkAndroid, linkIos, linkSignIn } from "@/lib/links";
 import { ArrowRight, Download } from "lucide-react";
+import Link from "next/link";
 
 export function HeroSection() {
   return (
@@ -13,31 +15,42 @@ export function HeroSection() {
                 An AI-First App to <span className="text-brand-yellow">Get You Hired</span>
               </h1>
               <p className="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-2xl">
-                Record, review, and refine your interviews, track opportunities, and tailor your CV — all in one AI-powered workspace.
+                Record, review, and refine your interviews, track opportunities, and tailor your CV all in one AI-powered workspace.
               </p>
             </div>
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-brand-yellow hover:bg-golden-honey text-brand-black font-semibold px-8 py-3 rounded-full text-lg transition-all duration-200 hover:scale-105 hover:shadow-lg">
-                Get Started Free
-                <ArrowRight className="ml-2 h-5 w-5" />
+              <Button
+                asChild
+                className="bg-brand-yellow hover:bg-golden-honey text-brand-black font-semibold px-8 py-3 rounded-full text-lg transition-all duration-200 hover:scale-105 hover:shadow-lg"
+              >
+                <Link href={linkSignIn}>
+                  Get Started Free
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
               </Button>
 
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button
                   variant="outline"
-                  className="border-2 border-brand-black text-brand-black hover:bg-brand-black hover:text-white px-6 py-3 rounded-full font-semibold transition-all duration-200 bg-transparent"
+                  asChild
+                  className="border-2 border-brand-black bg-transparent px-6 py-3 rounded-full font-semibold transition-all duration-200 text-brand-black hover:bg-brand-black hover:!text-white"
                 >
-                  <Download className="mr-2 h-4 w-4" />
-                  App Store
+                  <a href={linkIos} target="_blank" rel="noopener noreferrer">
+                    <Download className="mr-2 h-4 w-4" />
+                    App Store
+                  </a>
                 </Button>
                 <Button
                   variant="outline"
-                  className="border-2 border-brand-black text-brand-black hover:bg-brand-black hover:text-white px-6 py-3 rounded-full font-semibold transition-all duration-200 bg-transparent"
+                  asChild
+                  className="border-2 border-brand-black bg-transparent px-6 py-3 rounded-full font-semibold transition-all duration-200 text-brand-black hover:bg-brand-black hover:!text-white"
                 >
-                  <Download className="mr-2 h-4 w-4" />
-                  Google Play
+                  <a href={linkAndroid} target="_blank" rel="noopener noreferrer">
+                    <Download className="mr-2 h-4 w-4" />
+                    Google Play
+                  </a>
                 </Button>
               </div>
             </div>
@@ -57,12 +70,6 @@ export function HeroSection() {
                 </div>
               </div>
 
-              {/* Mobile Mockup */}
-              <div className="absolute -bottom-4 -right-4 bg-white rounded-2xl shadow-xl p-3 w-32">
-                <div className="bg-gradient-to-br from-brand-yellow to-golden-honey rounded-lg p-3 h-24 flex items-center justify-center">
-                  <img src="/placeholder-qhsrt.png" alt="Mobile app showing job tracking" className="rounded shadow-sm max-w-full h-auto" />
-                </div>
-              </div>
             </div>
 
             {/* Background decoration */}

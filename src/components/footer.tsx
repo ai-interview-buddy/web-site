@@ -1,31 +1,43 @@
+import {
+  linkAndroid,
+  linkDocFeatures,
+  linkDocReportBug,
+  linkDocReportSecurity,
+  linkDocRequesFeature,
+  linkDocs,
+  linkGitHub,
+  linkIos,
+  linkReddit,
+  linkWebApp,
+} from "@/lib/links";
 import { Github, ExternalLink } from "lucide-react";
 
 const footerSections = [
   {
     title: "Product",
     links: [
-      { name: "Features", href: "#features" },
-      { name: "App Store", href: "#" },
-      { name: "Google Play", href: "#" },
-      { name: "Web App", href: "#" },
+      { name: "Features", href: linkDocFeatures },
+      { name: "App Store", href: linkIos },
+      { name: "Google Play", href: linkAndroid },
+      { name: "Web App", href: linkWebApp },
     ],
   },
   {
     title: "Resources",
     links: [
-      { name: "Documentation", href: "#docs" },
-      { name: "GitHub", href: "#", icon: Github },
-      { name: "Privacy Policy", href: "#" },
-      { name: "Terms of Service", href: "#" },
+      { name: "Documentation", href: linkDocs },
+      { name: "Privacy Policy", href: "/privacy-policy" },
+      { name: "Terms of Service", href: "/terms-of-service" },
     ],
   },
   {
     title: "Get Engaged",
     links: [
-      { name: "Reddit", href: "#", icon: ExternalLink },
-      { name: "Request a Feature", href: "#" },
-      { name: "Report a Bug", href: "#" },
-      { name: "Report a Security Threat", href: "#" },
+      { name: "Reddit", href: linkReddit, icon: ExternalLink },
+      { name: "GitHub", href: linkGitHub, icon: Github },
+      { name: "Request a Feature", href: linkDocRequesFeature },
+      { name: "Report a Bug", href: linkDocReportBug },
+      { name: "Report a Security Threat", href: linkDocReportSecurity },
     ],
   },
 ];
@@ -53,7 +65,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-gray-700 pt-8 text-center">
-          <p className="text-gray-400">© 2025 AI Interview Buddy — An AI-First App to Get You Hired</p>
+          <p className="text-gray-400">© 2025 AI Interview Buddy - An AI-First App to Get You Hired</p>
         </div>
       </div>
     </footer>

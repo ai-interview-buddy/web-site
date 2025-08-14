@@ -3,6 +3,9 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
+import { linkDocs, linkSignIn } from "@/lib/links";
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,30 +28,33 @@ export function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <h1 className="text-xl font-bold text-brand-black">AI Interview Buddy</h1>
-          </div>
+          <h1 className="flex items-center space-x-3 flex-shrink-0">
+            <Link href="/" className="flex items-center space-x-3">
+              <Image className="dark:invert" src="/logo.png" alt="AI Interview Buddy Logo" width={60} height={38} priority />
+              <span className="text-xl font-bold text-brand-black">AI Interview Buddy</span>
+            </Link>
+          </h1>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-brand-black hover:text-golden-honey transition-colors">
+            <a href="/#features" className="text-brand-black hover:text-golden-honey transition-colors">
               Features
             </a>
-            <a href="#community" className="text-brand-black hover:text-golden-honey transition-colors">
+            <a href="/#community" className="text-brand-black hover:text-golden-honey transition-colors">
               Community
             </a>
-            <a href="#pricing" className="text-brand-black hover:text-golden-honey transition-colors">
+            <a href="/#pricing" className="text-brand-black hover:text-golden-honey transition-colors">
               Pricing
             </a>
-            <a href="#docs" className="text-brand-black hover:text-golden-honey transition-colors">
-              Docs
+            <a href={linkDocs} className="block px-3 py-2 text-brand-black hover:text-golden-honey transition-colors">
+              Documentation
             </a>
           </nav>
 
           {/* Sign In Button */}
           <div className="hidden md:block">
             <Button className="bg-brand-yellow hover:bg-golden-honey text-brand-black font-semibold px-6 py-2 rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg">
-              Sign In
+              <Link href={linkSignIn}>Sign In</Link>
             </Button>
           </div>
 
@@ -67,21 +73,21 @@ export function Header() {
         {isMobileMenuOpen && (
           <div className="md:hidden bg-white border-t border-gray-200">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <a href="#features" className="block px-3 py-2 text-brand-black hover:text-golden-honey transition-colors">
+              <a href="/#features" className="block px-3 py-2 text-brand-black hover:text-golden-honey transition-colors">
                 Features
               </a>
-              <a href="#community" className="block px-3 py-2 text-brand-black hover:text-golden-honey transition-colors">
+              <a href="/#community" className="block px-3 py-2 text-brand-black hover:text-golden-honey transition-colors">
                 Community
               </a>
-              <a href="#pricing" className="block px-3 py-2 text-brand-black hover:text-golden-honey transition-colors">
+              <a href="/#pricing" className="block px-3 py-2 text-brand-black hover:text-golden-honey transition-colors">
                 Pricing
               </a>
-              <a href="#docs" className="block px-3 py-2 text-brand-black hover:text-golden-honey transition-colors">
-                Docs
+              <a href={linkDocs} className="block px-3 py-2 text-brand-black hover:text-golden-honey transition-colors">
+                Documentation
               </a>
               <div className="px-3 py-2">
                 <Button className="w-full bg-brand-yellow hover:bg-golden-honey text-brand-black font-semibold py-2 rounded-full">
-                  Sign In
+                  <Link href={linkSignIn}>Sign In</Link>
                 </Button>
               </div>
             </div>

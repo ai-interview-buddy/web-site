@@ -3,8 +3,8 @@ import { HeroSection } from "@/components/hero-section";
 import { FeaturesSection } from "@/components/features-section";
 import { CommunitySection } from "@/components/community-section";
 import { OpenSourceSection } from "@/components/open-source-section";
-import { PricingSection } from "@/components/pricing-section";
 import { Footer } from "@/components/footer";
+import { PricingBetaSection } from "@/components/pricing-beta-section";
 
 export default function HomePage() {
   return (
@@ -15,7 +15,7 @@ export default function HomePage() {
         <FeaturesSection />
         <CommunitySection />
         <OpenSourceSection />
-        <PricingSection />
+        <PricingBetaSection />
       </main>
       <Footer />
     </div>
