@@ -22,22 +22,9 @@ pnpm dev
 bun dev
 ```
 
-Then open [http://localhost:3000/app-ai-interview-buddy](http://localhost:3000/app-ai-interview-buddy) in your browser.
+Then open [http://localhost:3000/](http://localhost:3000/) in your browser.
 
 You can start editing the app by modifying files inside the `app/` directory. The page will auto-update as you make changes.
-
-### GitHub Pages Simulation (Local)
-To simulate how the site will be served on GitHub Pages (including the `/app-ai-interview-buddy` base path), you can run:
-
-```bash
-./buildLocal.sh
-```
-
-This script will:
-1. Clean old builds
-2. Build the site in static export mode
-3. Move files into `/out/app-ai-interview-buddy/`
-4. Serve locally exactly as it will appear on GitHub Pages.
 
 ## Learn More
 

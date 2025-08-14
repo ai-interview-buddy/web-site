@@ -30,7 +30,7 @@ export function Header() {
           {/* Logo */}
           <h1 className="flex items-center space-x-3 flex-shrink-0">
             <Link href="/" className="flex items-center space-x-3">
-              <Image className="dark:invert" src="/app-ai-interview-buddy/logo.png" alt="AI Interview Buddy Logo" width={60} height={38} priority />
+              <Image className="dark:invert" src="/logo.png" alt="AI Interview Buddy Logo" width={60} height={38} priority />
               <span className="text-xl font-bold text-brand-black">AI Interview Buddy</span>
             </Link>
           </h1>

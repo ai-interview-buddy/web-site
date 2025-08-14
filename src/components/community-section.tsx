@@ -9,7 +9,7 @@ export function CommunitySection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center">
         <div className="animate-fade-in-up">
           <div className="w-20 h-20 bg-brand-yellow rounded-full flex items-center justify-center mx-auto mb-8">
-            <Image className="dark:invert" src="/app-ai-interview-buddy/reddit.png" alt="Reddit r/AiInterviewBuddy" width={36} height={36} priority />
+            <Image className="dark:invert" src="/reddit.png" alt="Reddit r/AiInterviewBuddy" width={36} height={36} priority />
           </div>
 
           <h2 className="text-3xl sm:text-4xl font-bold text-brand-black mb-6">Shaped by the Community</h2>

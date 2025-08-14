@@ -64,7 +64,7 @@ export function HeroSection() {
               <div className="bg-white rounded-2xl shadow-2xl p-4 mb-8">
                 <div className="bg-gradient-to-br from-pollen to-soft-white rounded-xl p-6 h-64 flex items-center justify-center">
                   <Image
-                    src="/app-ai-interview-buddy/ai-interview-dashboard.png"
+                    src="/ai-interview-dashboard.png"
                     alt="Desktop app showing interview feedback"
                     className="rounded-lg shadow-lg max-w-full h-auto"
                     width={600}
