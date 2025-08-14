@@ -23,12 +23,12 @@ export function PricingBetaSection() {
           <CardContent className="px-6 sm:px-10 py-10">
             <div className="mx-auto max-w-3xl space-y-6 text-center">
               <p className="text-gray-700">
-                We're currently in beta, focused on building the best AI-powered job-hunting companion possible. All features are free
-                during beta, but since AI resources are expensive, we'll introduce a fair and transparent pricing model later.
+                We are currently in beta, focused on building the best AI-powered job-hunting companion possible. All features are free
+                during beta, but since AI resources are expensive, we will introduce a fair and transparent pricing model later.
               </p>
 
               <div className="text-left space-y-3 mx-auto max-w-xl">
-                <p className="font-semibold text-brand-black">By joining now, you'll:</p>
+                <p className="font-semibold text-brand-black">By joining now, you will:</p>
 
                 <div className="flex items-start gap-3">
                   <Check className="h-5 w-5 text-brand-yellow mt-0.5 flex-shrink-0" />

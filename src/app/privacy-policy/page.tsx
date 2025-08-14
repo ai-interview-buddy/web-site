@@ -17,7 +17,7 @@ export default function PrivacyPolicyPage() {
 
             <div className="space-y-8 text-gray-700 leading-relaxed">
               <p>
-                AI Interview Buddy ("we", "our", or "us") values your privacy and is committed to protecting your personal information. This
+                AI Interview Buddy (we, our, or us) values your privacy and is committed to protecting your personal information. This
                 Privacy Policy explains how we collect, use, and safeguard your data when you use our website, web app, and mobile
                 applications.
               </p>
@@ -130,8 +130,8 @@ export default function PrivacyPolicyPage() {
               <section>
                 <h2 className="text-2xl font-semibold text-brand-black mb-4">9. Changes to This Privacy Policy</h2>
                 <p>
-                  We may update this policy from time to time. The latest version will always be posted on this page with the "Effective
-                  Date" updated accordingly.
+                  We may update this policy from time to time. The latest version will always be posted on this page with the `Effective
+                  Date` updated accordingly.
                 </p>
               </section>
 

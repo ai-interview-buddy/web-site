@@ -11,6 +11,7 @@ import {
   linkWebApp,
 } from "@/lib/links";
 import { Github, ExternalLink } from "lucide-react";
+import Link from "next/link";
 
 const footerSections = [
   {
@@ -53,10 +54,18 @@ export function Footer() {
               <ul className="space-y-4">
                 {section.links.map((link, linkIndex) => (
                   <li key={linkIndex}>
-                    <a href={link.href} className="text-gray-300 hover:text-brand-yellow transition-colors flex items-center gap-2">
-                      {link.icon && <link.icon className="h-4 w-4" />}
-                      {link.name}
-                    </a>
+                    {link.href.startsWith("http") && (
+                      <a href={link.href} className="text-gray-300 hover:text-brand-yellow transition-colors flex items-center gap-2">
+                        {link.icon && <link.icon className="h-4 w-4" />}
+                        {link.name}
+                      </a>
+                    )}
+                    {!link.href.startsWith("http") && (
+                      <Link href={link.href} className="text-gray-300 hover:text-brand-yellow transition-colors flex items-center gap-2">
+                        {link.icon && <link.icon className="h-4 w-4" />}
+                        {link.name}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>

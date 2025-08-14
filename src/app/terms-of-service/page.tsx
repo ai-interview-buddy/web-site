@@ -18,8 +18,8 @@ export default function TermsOfServicePage() {
 
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-700 mb-6">
-                Welcome to AI Interview Buddy ("we", "our", or "us"). By accessing or using our website, web app, or mobile applications
-                (collectively, the "Service"), you agree to be bound by these Terms of Use ("Terms"). Please read them carefully.
+                Welcome to AI Interview Buddy (we, our, or us). By accessing or using our website, web app, or mobile applications
+                (collectively, the Service), you agree to be bound by these Terms of Use (Terms). Please read them carefully.
               </p>
 
               <section className="mb-8">
@@ -103,7 +103,7 @@ export default function TermsOfServicePage() {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-[#1D252C] mb-4">9. Disclaimers</h2>
                 <p className="text-gray-700">
-                  The Service is provided "as is" and "as available" without warranties of any kind. We do not guarantee that the Service
+                  The Service is provided `as is` and `as available` without warranties of any kind. We do not guarantee that the Service
                   will be error-free, secure, or available at all times.
                 </p>
               </section>
@@ -119,7 +119,7 @@ export default function TermsOfServicePage() {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-[#1D252C] mb-4">11. Changes to These Terms</h2>
                 <p className="text-gray-700">
-                  We may modify these Terms at any time. Updated versions will be posted on this page with the "Effective Date" updated.
+                  We may modify these Terms at any time. Updated versions will be posted on this page with the `Effective Date` updated.
                   Continued use of the Service constitutes acceptance of the updated Terms.
                 </p>
               </section>

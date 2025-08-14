@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { linkAndroid, linkIos, linkSignIn } from "@/lib/links";
 import { ArrowRight, Download } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export function HeroSection() {
@@ -62,10 +63,12 @@ export function HeroSection() {
               {/* Desktop Mockup */}
               <div className="bg-white rounded-2xl shadow-2xl p-4 mb-8">
                 <div className="bg-gradient-to-br from-pollen to-soft-white rounded-xl p-6 h-64 flex items-center justify-center">
-                  <img
-                    src="/ai-interview-dashboard.png"
+                  <Image
+                    src="/app-ai-interview-buddy/ai-interview-dashboard.png"
                     alt="Desktop app showing interview feedback"
                     className="rounded-lg shadow-lg max-w-full h-auto"
+                    width={600}
+                    height={400}
                   />
                 </div>
               </div>

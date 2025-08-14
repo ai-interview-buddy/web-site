@@ -30,22 +30,22 @@ export function Header() {
           {/* Logo */}
           <h1 className="flex items-center space-x-3 flex-shrink-0">
             <Link href="/" className="flex items-center space-x-3">
-              <Image className="dark:invert" src="/logo.png" alt="AI Interview Buddy Logo" width={60} height={38} priority />
+              <Image className="dark:invert" src="/app-ai-interview-buddy/logo.png" alt="AI Interview Buddy Logo" width={60} height={38} priority />
               <span className="text-xl font-bold text-brand-black">AI Interview Buddy</span>
             </Link>
           </h1>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="/#features" className="text-brand-black hover:text-golden-honey transition-colors">
+            <Link href="/#features" className="text-brand-black hover:text-golden-honey transition-colors">
               Features
-            </a>
-            <a href="/#community" className="text-brand-black hover:text-golden-honey transition-colors">
+            </Link>
+            <Link href="/#community" className="text-brand-black hover:text-golden-honey transition-colors">
               Community
-            </a>
-            <a href="/#pricing" className="text-brand-black hover:text-golden-honey transition-colors">
+            </Link>
+            <Link href="/#pricing" className="text-brand-black hover:text-golden-honey transition-colors">
               Pricing
-            </a>
+            </Link>
             <a href={linkDocs} className="block px-3 py-2 text-brand-black hover:text-golden-honey transition-colors">
               Documentation
             </a>
@@ -73,15 +73,15 @@ export function Header() {
         {isMobileMenuOpen && (
           <div className="md:hidden bg-white border-t border-gray-200">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <a href="/#features" className="block px-3 py-2 text-brand-black hover:text-golden-honey transition-colors">
+              <Link href="/#features" className="block px-3 py-2 text-brand-black hover:text-golden-honey transition-colors">
                 Features
-              </a>
-              <a href="/#community" className="block px-3 py-2 text-brand-black hover:text-golden-honey transition-colors">
+              </Link>
+              <Link href="/#community" className="block px-3 py-2 text-brand-black hover:text-golden-honey transition-colors">
                 Community
-              </a>
-              <a href="/#pricing" className="block px-3 py-2 text-brand-black hover:text-golden-honey transition-colors">
+              </Link>
+              <Link href="/#pricing" className="block px-3 py-2 text-brand-black hover:text-golden-honey transition-colors">
                 Pricing
-              </a>
+              </Link>
               <a href={linkDocs} className="block px-3 py-2 text-brand-black hover:text-golden-honey transition-colors">
                 Documentation
               </a>
