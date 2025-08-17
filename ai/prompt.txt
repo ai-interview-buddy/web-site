@@ -1,0 +1,91 @@
+# AI Interview Buddy
+
+**Project Overview**  
+AI Interview Buddy is an AI-first web and mobile app that helps job seekers get hired by providing AI-powered interview feedback, job tracking, and CV tailoring — all in one workspace.
+
+---
+
+## Brand & Style
+- **Primary Colour (Yellow):** #FFC629 (rgb(255, 198, 41))
+- **Secondary (Black):** #1D252C (rgb(29, 37, 44))
+- **Tertiary Palette:**
+  - Soft White: #FEFBED (rgb(254, 251, 237))
+  - Pollen: #FFF7DE (rgb(255, 247, 222))
+  - Golden Honey: #E3AA1F (rgb(227, 170, 31))
+- Modern, clean, professional
+- Rounded corners, subtle shadows, generous whitespace
+- Soft gradient backgrounds for section separation
+- Bold, rounded buttons with brand yellow
+- Modern sans-serif font (Inter, Poppins, or similar)
+- Realistic app screenshots in device mockups
+
+---
+
+## Technology
+- Next.js 15 with App Router pages
+- Static Site Generation (SSG)
+- Tailwind CSS
+- Responsive layout (mobile-first)
+- Smooth scroll navigation
+
+---
+
+## Structure & Content
+
+### 1. Header
+- Logo (AI Interview Buddy)
+- Menu: Features | Community | Pricing | Docs
+- Sign In button (primary yellow)
+- Sticky with shadow on scroll
+
+### 2. Hero Section
+**Headline:** An AI-First App to Get You Hired  
+**Subheadline:** Record, review, and refine your interviews, track opportunities, and tailor your CV — all in one AI-powered workspace.  
+**CTAs:**  
+- Get Started Free → (web app)  
+- App Store badge + Google Play badge  
+**Visuals:** Desktop + mobile mockups with interview feedback & job tracking
+
+### 3. Features Section
+**Headline:** Everything You Need to Land the Job You Deserve  
+**Features:**
+1. **Interview Feedback That Works** — AI analyses every question and scores structure, clarity, and impact.
+2. **Career Profiles** — Multiple CVs reviewed against role-specific criteria.
+3. **Smarter Job Tracking** — Paste a job link; auto-capture company, title, salary, and skills.
+4. **AI-Powered Applications** — Generate cover letters, track salaries, add notes.
+
+### 4. Community Section
+**Headline:** Shaped by the Community  
+**Copy:** Built with input from Reddit job seekers and hiring experts.  
+Links: Join the Community →, Read the Docs →
+
+### 5. Open Source Section
+**Headline:** Built in the Open  
+**Copy:** Fully open-source under MIT license.  
+CTA: View on GitHub →
+
+### 6. Pricing Section
+**Headline:** Simple, Transparent Pricing  
+|   | Free | Premium (Best Value) |
+|---|------|----------------------|
+| CVs analysed in career profile | 1 | Unlimited |
+| Job Positions applied | 10 | Unlimited |
+| Interview Feedback | 1 | Unlimited |
+
+CTA: Try Premium Free for 7 Days →
+
+### 7. Footer
+Blocks:  
+1. Product — Features, App Store, Google Play, Web App  
+2. Resources — Documentation, GitHub, Privacy Policy, Terms of Service  
+3. Get Engaged — Reddit, Request a Feature, Report a Bug, Report a Security Threat  
+Footer note: © 2025 AI Interview Buddy — An AI-First App to Get You Hired
+
+---
+
+## Design & Interaction Notes
+- Scroll animations (fade-in, slide-up)
+- Button hover effects (scale + shadow)
+- Smooth anchor scroll
+- Accessibility compliance
+- Fully responsive down to 320px
