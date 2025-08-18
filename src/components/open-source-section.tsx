@@ -13,7 +13,7 @@ export function OpenSourceSection() {
 
           <h2 className="text-3xl sm:text-4xl font-bold text-brand-black mb-6">Built in the Open</h2>
 
-          <p className="text-xl text-gray-600 mb-8 leading-relaxed">Fully open-source under GPL-2.0 license.</p>
+          <p className="text-xl text-gray-600 mb-8 leading-relaxed">Fully open-source under GPL-3.0 license.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               asChild

@@ -66,6 +66,7 @@ export function HeroSection() {
         <div className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4" onClick={() => setIsModalOpen(false)}>
           <div
             className="relative w-full max-w-5xl max-h-[90vh] overflow-auto rounded-xl bg-white p-4"
+            style={{ backgroundColor: "#FFF7DE" }}
             onClick={(e) => e.stopPropagation()} // Prevent modal click from closing
           >
             <button
