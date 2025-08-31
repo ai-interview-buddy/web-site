@@ -54,7 +54,7 @@ export function Header() {
           {/* Sign In Button */}
           <div className="hidden md:block">
             <Link href={linkSignIn} passHref>
-              <Button className="bg-brand-yellow hover:bg-golden-honey text-brand-black font-semibold px-6 py-2 rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg">
+              <Button className="bg-brand-yellow hover:bg-golden-honey text-brand-black font-semibold px-6 py-2 rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg cursor-pointer">
                 Sign In
               </Button>
             </Link>
@@ -89,7 +89,7 @@ export function Header() {
               </a>
               <div className="px-3 py-2">
                 <Link href={linkSignIn} passHref>
-                  <Button className="w-full bg-brand-yellow hover:bg-golden-honey text-brand-black font-semibold py-2 rounded-full">
+                  <Button className="w-full bg-brand-yellow hover:bg-golden-honey text-brand-black font-semibold py-2 rounded-full cursor-pointer">
                     Sign In
                   </Button>
                 </Link>

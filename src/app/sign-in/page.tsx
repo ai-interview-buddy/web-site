@@ -73,7 +73,7 @@ export default function SignInPage() {
                   Access all features instantly in your browser. No download required, works on any device.
                 </p>
               </div>
-              <Button className="w-full bg-brand-black hover:bg-gray-800 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-200 hover:shadow-lg">
+              <Button className="w-full bg-brand-black hover:bg-gray-800 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-200 hover:shadow-lg" asChild>
                 <a href={linkWebApp}>Launch Web App </a>
               </Button>
             </div>
