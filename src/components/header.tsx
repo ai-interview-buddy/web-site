@@ -53,9 +53,11 @@ export function Header() {
 
           {/* Sign In Button */}
           <div className="hidden md:block">
-            <Button className="bg-brand-yellow hover:bg-golden-honey text-brand-black font-semibold px-6 py-2 rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg">
-              <Link href={linkSignIn}>Sign In</Link>
-            </Button>
+            <Link href={linkSignIn} passHref>
+              <Button className="bg-brand-yellow hover:bg-golden-honey text-brand-black font-semibold px-6 py-2 rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg">
+                Sign In
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -86,9 +88,11 @@ export function Header() {
                 Documentation
               </a>
               <div className="px-3 py-2">
-                <Button className="w-full bg-brand-yellow hover:bg-golden-honey text-brand-black font-semibold py-2 rounded-full">
-                  <Link href={linkSignIn}>Sign In</Link>
-                </Button>
+                <Link href={linkSignIn} passHref>
+                  <Button className="w-full bg-brand-yellow hover:bg-golden-honey text-brand-black font-semibold py-2 rounded-full">
+                    Sign In
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

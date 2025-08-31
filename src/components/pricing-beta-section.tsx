@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Rocket } from "lucide-react";
+import { linkSignIn } from "@/lib/links";
 
 export function PricingBetaSection() {
   return (
@@ -47,12 +48,15 @@ export function PricingBetaSection() {
               </div>
 
               <div className="pt-4">
-                <Button
-                  asChild
-                  className="w-full sm:w-auto bg-brand-yellow hover:bg-golden-honey text-brand-black font-semibold py-3 rounded-full text-lg transition-all duration-200 hover:scale-105"
-                >
-                  <Link href="/signup">Join the Beta →</Link>
-                </Button>
+                <Link href={linkSignIn} passHref>
+                  {" "}
+                  <Button
+                    asChild
+                    className="w-full sm:w-auto bg-brand-yellow hover:bg-golden-honey text-brand-black font-semibold py-3 rounded-full text-lg transition-all duration-200 hover:scale-105"
+                  >
+                    Join the Beta →
+                  </Button>
+                </Link>
               </div>
             </div>
           </CardContent>
