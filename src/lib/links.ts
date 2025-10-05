@@ -1,8 +1,8 @@
 export const linkSignIn = "/sign-in";
 
 // ### APPs
-export const linkWebApp = "https://forms.gle/osV6C81EP9Ax6zzY6";
-export const linkIos = "https://forms.gle/osV6C81EP9Ax6zzY6";
+export const linkWebApp = "https://app.aiinterviewbuddy.com";
+export const linkIos = "https://apps.apple.com/us/app/ai-interview-buddy/id6752513039";
 export const linkAndroid = "https://forms.gle/osV6C81EP9Ax6zzY6";
 
 // ### External
